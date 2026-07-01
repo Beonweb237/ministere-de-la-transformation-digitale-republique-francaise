@@ -22,6 +22,7 @@ import {
   ExternalLink,
   ArrowUp,
   ArrowDown,
+  ArrowRight,
   FileText,
   Download,
   ChevronRight,
