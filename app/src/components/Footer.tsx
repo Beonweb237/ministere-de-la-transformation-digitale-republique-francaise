@@ -175,16 +175,6 @@ export default function Footer() {
         >
           <p className="text-white font-source-sans font-normal" style={{ fontSize: '12px', opacity: 0.4 }}>
             © 2026 Ministère de la Transformation Digitale — République Française
-            {' '}&mdash;{' '}
-            <a
-              href="https://www.beonweb.cm/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="no-underline transition-colors duration-150 hover:text-white"
-              style={{ color: 'inherit', opacity: 1 }}
-            >
-              Conçu par Beonweb
-            </a>
           </p>
         </div>
       </div>
