@@ -25,58 +25,58 @@ gsap.registerPlugin(ScrollTrigger);
 
 const faqItems = [
   {
-    q: 'Comment contacter le minist\u00e8re ?',
-    a: 'Vous pouvez nous contacter par email \u00e0 contact@transformation.gouv.fr, par t\u00e9l\u00e9phone au 01 53 73 30 00 du lundi au vendredi de 9h \u00e0 18h, ou en utilisant le formulaire de contact ci-dessus. Pour les demandes urgentes concernant vos d\u00e9marches, contactez le 3939.',
+    q: 'Comment contacter le ministère ?',
+    a: 'Vous pouvez nous contacter par email à contact@transformation.gouv.fr, par téléphone au 01 53 73 30 00 du lundi au vendredi de 9h à 18h, ou en utilisant le formulaire de contact ci-dessus. Pour les demandes urgentes concernant vos démarches, contactez le 3939.',
   },
   {
-    q: 'Quels sont les d\u00e9lais de r\u00e9ponse ?',
-    a: "Le minist\u00e8re s'engage \u00e0 r\u00e9pondre \u00e0 toute demande dans un d\u00e9lai de 15 jours ouvrables. Pour les demandes complexes n\u00e9cessitant une expertise sp\u00e9cifique, le d\u00e9lai peut \u00eatre port\u00e9 \u00e0 30 jours avec une notification pr\u00e9alable.",
+    q: 'Quels sont les délais de réponse ?',
+    a: "Le ministère s'engage à répondre à toute demande dans un délai de 15 jours ouvrables. Pour les demandes complexes nécessitant une expertise spécifique, le délai peut être porté à 30 jours avec une notification préalable.",
   },
   {
-    q: 'Comment signaler un probl\u00e8me technique sur un service en ligne ?',
-    a: "Utilisez le formulaire de contact en s\u00e9lectionnant \u2018Signaler un probl\u00e8me technique\u2019 comme sujet. Pr\u00e9cisez le service concern\u00e9, la nature du probl\u00e8me et, si possible, capturez d'\u00e9cran. Notre \u00e9quipe technique vous r\u00e9pondra sous 48h.",
+    q: 'Comment signaler un problème technique sur un service en ligne ?',
+    a: "Utilisez le formulaire de contact en sélectionnant ‘Signaler un problème technique’ comme sujet. Précisez le service concerné, la nature du problème et, si possible, capturez d'écran. Notre équipe technique vous répondra sous 48h.",
   },
   {
-    q: 'Puis-je visiter le minist\u00e8re ?',
-    a: "Le minist\u00e8re n'est pas ouvert aux visites publiques. Cependant, des journ\u00e9es portes ouvertes sont organis\u00e9es annuellement, g\u00e9n\u00e9ralement en septembre. Consultez notre page Actualit\u00e9s pour les prochaines dates.",
+    q: 'Puis-je visiter le ministère ?',
+    a: "Le ministère n'est pas ouvert aux visites publiques. Cependant, des journées portes ouvertes sont organisées annuellement, généralement en septembre. Consultez notre page Actualités pour les prochaines dates.",
   },
   {
-    q: 'Comment devenir prestataire du minist\u00e8re ?',
-    a: 'Les march\u00e9s publics du minist\u00e8re sont publi\u00e9s sur la plateforme PLACE et sur le portail de transparence de notre site. Inscrivez-vous sur ces plateformes pour recevoir les avis d\u2019appel public \u00e0 la concurrence.',
+    q: 'Comment devenir prestataire du ministère ?',
+    a: 'Les marchés publics du ministère sont publiés sur la plateforme PLACE et sur le portail de transparence de notre site. Inscrivez-vous sur ces plateformes pour recevoir les avis d’appel public à la concurrence.',
   },
   {
-    q: 'O\u00f9 puis-je consulter les donn\u00e9es budg\u00e9taires ?',
-    a: "L'int\u00e9gralit\u00e9 des donn\u00e9es budg\u00e9taires est disponible sur la page Transparence de ce site et sur data.gouv.fr. Vous y trouverez le budget annuel, le compte financier et les rapports de performance.",
+    q: 'Où puis-je consulter les données budgétaires ?',
+    a: "L'intégralité des données budgétaires est disponible sur la page Transparence de ce site et sur data.gouv.fr. Vous y trouverez le budget annuel, le compte financier et les rapports de performance.",
   },
   {
-    q: 'Comment acc\u00e9der aux archives du minist\u00e8re ?',
-    a: 'Les archives publiques sont consultables sur demande \u00e9crite adress\u00e9e au service des archives. Certaines archives num\u00e9ris\u00e9es sont \u00e9galement disponibles sur FranceArchives.',
+    q: 'Comment accéder aux archives du ministère ?',
+    a: 'Les archives publiques sont consultables sur demande écrite adressée au service des archives. Certaines archives numérisées sont également disponibles sur FranceArchives.',
   },
   {
-    q: 'Le site est-il accessible aux personnes handicap\u00e9es ?',
-    a: 'Oui, ce site est conforme au r\u00e9f\u00e9rentiel g\u00e9n\u00e9ral d\u2019am\u00e9lioration de l\u2019accessibilit\u00e9 (RGAA) version 4.1. Une d\u00e9claration d\u2019accessibilit\u00e9 est disponible en pied de page. Si vous rencontrez des difficult\u00e9s, contactez-nous.',
+    q: 'Le site est-il accessible aux personnes handicapées ?',
+    a: 'Oui, ce site est conforme au référentiel général d’amélioration de l’accessibilité (RGAA) version 4.1. Une déclaration d’accessibilité est disponible en pied de page. Si vous rencontrez des difficultés, contactez-nous.',
   },
 ];
 
 const transportModes = [
   {
     icon: Train,
-    title: 'Ligne 8 \u2014 Boucicaut ou L\u2019\u00c9cole Militaire',
-    subtitle: 'Ligne 10 \u2014 S\u00e9gur',
+    title: 'Ligne 8 — Boucicaut ou L’École Militaire',
+    subtitle: 'Ligne 10 — Ségur',
   },
   {
     icon: Bus,
-    title: 'Lignes 28, 80, 82, 92 \u2014 arr\u00eat S\u00e9gur',
+    title: 'Lignes 28, 80, 82, 92 — arrêt Ségur',
     subtitle: null,
   },
   {
     icon: Train,
-    title: 'RER C \u2014 Champ de Mars',
+    title: 'RER C — Champ de Mars',
     subtitle: '10 minutes de marche',
   },
   {
     icon: Bike,
-    title: 'Station V\u00e9lib\u2019 n\u00b07024 \u2014 avenue de S\u00e9gur',
+    title: 'Station Vélib’ n°7024 — avenue de Ségur',
     subtitle: null,
   },
 ];
@@ -85,23 +85,23 @@ const specializedServices = [
   {
     icon: Phone,
     name: 'France Services',
-    description: 'Assistance pour vos d\u00e9marches administratives en ligne et en pr\u00e9sentiel.',
+    description: 'Assistance pour vos démarches administratives en ligne et en présentiel.',
     phone: '3939',
-    hours: '7j/7, 9h\u201318h',
+    hours: '7j/7, 9h–18h',
   },
   {
     icon: Phone,
     name: 'Cybermalveillance',
-    description: 'Signalement et assistance en cas de cyberattaque ou d\u2019usurpation d\u2019identit\u00e9.',
+    description: 'Signalement et assistance en cas de cyberattaque ou d’usurpation d’identité.',
     phone: '3977',
     hours: '24h/24, 7j/7',
   },
   {
     icon: Phone,
     name: 'DILA',
-    description: 'Direction de l\u2019Information L\u00e9gale et Administrative. Questions juridiques.',
+    description: 'Direction de l’Information Légale et Administrative. Questions juridiques.',
     phone: '01 53 73 30 00',
-    hours: 'Lun\u2013Ven, 9h\u201318h',
+    hours: 'Lun–Ven, 9h–18h',
   },
 ];
 
@@ -184,7 +184,7 @@ function ContactHero() {
             lineHeight: 1.6,
           }}
         >
-          Le minist\u00e8re et ses services sont \u00e0 votre disposition pour r\u00e9pondre \u00e0 vos questions et vous accompagner dans vos d\u00e9marches.
+          Le ministère et ses services sont à votre disposition pour répondre à vos questions et vous accompagner dans vos démarches.
         </p>
 
         {/* Emergency hotline */}
@@ -208,7 +208,7 @@ function ContactHero() {
               color: '#FFFFFF',
             }}
           >
-            Num\u00e9ro vert France Services : 3939
+            Numéro vert France Services : 3939
           </span>
           <span
             style={{
@@ -218,7 +218,7 @@ function ContactHero() {
               color: 'rgba(255,255,255,0.5)',
             }}
           >
-            (service gratuit + prix d\u2019un appel)
+            (service gratuit + prix d’un appel)
           </span>
         </div>
       </div>
@@ -314,10 +314,10 @@ function ContactForm() {
                 }}
               />
 
-              {/* Pr\u00e9nom */}
+              {/* Prénom */}
               <motion.input
                 type="text"
-                placeholder="Votre pr\u00e9nom"
+                placeholder="Votre prénom"
                 className="w-full outline-none transition-all duration-200"
                 style={{
                   border: '1.5px solid #D6D6D0',
@@ -378,10 +378,10 @@ function ContactForm() {
                     (e.currentTarget as HTMLSelectElement).style.boxShadow = 'none';
                   }}
                 >
-                  <option value="" disabled>S\u00e9lectionnez un sujet</option>
-                  <option>Demande d\u2019information</option>
-                  <option>Signaler un probl\u00e8me technique</option>
-                  <option>Question sur une d\u00e9marche</option>
+                  <option value="" disabled>Sélectionnez un sujet</option>
+                  <option>Demande d’information</option>
+                  <option>Signaler un problème technique</option>
+                  <option>Question sur une démarche</option>
                   <option>Proposition de partenariat</option>
                   <option>Autre</option>
                 </select>
@@ -424,16 +424,16 @@ function ContactForm() {
                     lineHeight: 1.5,
                   }}
                 >
-                  J\u2019accepte que mes donn\u00e9es soient trait\u00e9es conform\u00e9ment \u00e0 la{' '}
+                  J’accepte que mes données soient traitées conformément à la{' '}
                   <a
                     href="#"
                     style={{ color: '#1E3A5F', textDecoration: 'underline' }}
                     onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.color = '#2B5C8F'; }}
                     onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.color = '#1E3A5F'; }}
                   >
-                    politique de confidentialit\u00e9
+                    politique de confidentialité
                   </a>{' '}
-                  du minist\u00e8re.
+                  du ministère.
                 </span>
               </label>
 
@@ -489,7 +489,7 @@ function ContactForm() {
                 paddingBottom: '12px',
               }}
             >
-              COORDONN\u00c9ES
+              COORDONNÉES
             </h3>
 
             <div className="flex flex-col" style={{ gap: '24px' }}>
@@ -498,7 +498,7 @@ function ContactForm() {
                 <MapPin size={18} color="#1E3A5F" className="flex-shrink-0 mt-0.5" />
                 <div>
                   <p style={{ fontFamily: "'Montserrat', sans-serif", fontWeight: 500, fontSize: '14px', color: '#1A1A1A', margin: 0 }}>
-                    20 avenue de S\u00e9gur
+                    20 avenue de Ségur
                   </p>
                   <p style={{ fontFamily: "'Source Sans 3', sans-serif", fontWeight: 400, fontSize: '13px', color: '#666666', margin: 0 }}>
                     75007 Paris, France
@@ -514,7 +514,7 @@ function ContactForm() {
                     01 53 73 30 00
                   </p>
                   <p style={{ fontFamily: "'Source Sans 3', sans-serif", fontWeight: 400, fontSize: '12px', color: '#666666', margin: 0 }}>
-                    Du lundi au vendredi, 9h\u201318h
+                    Du lundi au vendredi, 9h–18h
                   </p>
                 </div>
               </div>
@@ -545,10 +545,10 @@ function ContactForm() {
                 <Clock size={18} color="#1E3A5F" className="flex-shrink-0 mt-0.5" />
                 <div>
                   <p style={{ fontFamily: "'Source Sans 3', sans-serif", fontWeight: 400, fontSize: '13px', color: '#1A1A1A', margin: 0 }}>
-                    Lundi\u2013Vendredi : 9h00 \u2013 18h00
+                    Lundi–Vendredi : 9h00 – 18h00
                   </p>
                   <p style={{ fontFamily: "'Source Sans 3', sans-serif", fontWeight: 400, fontSize: '13px', color: '#666666', margin: 0 }}>
-                    Samedi\u2013Dimanche : Ferm\u00e9
+                    Samedi–Dimanche : Fermé
                   </p>
                 </div>
               </div>
@@ -557,7 +557,7 @@ function ContactForm() {
               <div className="flex items-start gap-4">
                 <Accessibility size={18} color="#1E3A5F" className="flex-shrink-0 mt-0.5" />
                 <p style={{ fontFamily: "'Source Sans 3', sans-serif", fontWeight: 400, fontSize: '12px', color: '#666666', margin: 0 }}>
-                  B\u00e2timent accessible aux personnes \u00e0 mobilit\u00e9 r\u00e9duite
+                  Bâtiment accessible aux personnes à mobilité réduite
                 </p>
               </div>
             </div>
@@ -651,9 +651,9 @@ function LocationMap() {
               <rect x="350" y="0" height="500" width="8" fill="#F5F2EC" />
               <rect x="0" y="120" width="800" height="8" fill="#F5F2EC" />
               <rect x="0" y="300" width="800" height="8" fill="#F5F2EC" />
-              {/* Avenue de S\u00e9gur label */}
+              {/* Avenue de Ségur label */}
               <rect x="505" y="180" width="160" height="26" fill="rgba(255,255,255,0.9)" rx="2" />
-              <text x="510" y="197" fontFamily="'Source Sans 3', sans-serif" fontSize="12" fill="#1A1A1A">Av. de S\u00e9gur</text>
+              <text x="510" y="197" fontFamily="'Source Sans 3', sans-serif" fontSize="12" fill="#1A1A1A">Av. de Ségur</text>
               {/* Building block */}
               <rect x="510" y="234" width="120" height="80" fill="#C9C5BC" rx="2" />
               <rect x="520" y="244" width="30" height="20" fill="#A39F96" rx="1" />
@@ -721,7 +721,7 @@ function LocationMap() {
                   color: '#1A1A1A',
                 }}
               >
-                20 avenue de S\u00e9gur, 75007 Paris
+                20 avenue de Ségur, 75007 Paris
               </span>
             </div>
           </div>
@@ -831,7 +831,7 @@ function FaqSection() {
               marginTop: '8px',
             }}
           >
-            Questions fr\u00e9quentes
+            Questions fréquentes
           </h2>
         </div>
 
@@ -944,7 +944,7 @@ function SpecializedServices() {
               marginTop: '8px',
             }}
           >
-            Contactez les services sp\u00e9cialis\u00e9s
+            Contactez les services spécialisés
           </h2>
         </div>
 
@@ -1067,7 +1067,7 @@ function NewsletterCTA() {
             marginTop: '12px',
           }}
         >
-          Restez en contact avec le minist\u00e8re
+          Restez en contact avec le ministère
         </h2>
         <p
           style={{
@@ -1079,7 +1079,7 @@ function NewsletterCTA() {
             lineHeight: 1.6,
           }}
         >
-          Inscrivez-vous \u00e0 notre lettre d\u2019information mensuelle pour recevoir les actualit\u00e9s et les nouveaux services.
+          Inscrivez-vous à notre lettre d’information mensuelle pour recevoir les actualités et les nouveaux services.
         </p>
 
         <form
@@ -1119,7 +1119,7 @@ function NewsletterCTA() {
             onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.background = '#D4A03E'; }}
             onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.background = '#E5B045'; }}
           >
-            S\u2019INSCRIRE
+            S’INSCRIRE
           </button>
         </form>
 
@@ -1132,7 +1132,7 @@ function NewsletterCTA() {
             marginTop: '12px',
           }}
         >
-          Conforme au RGPD. D\u00e9sinscription \u00e0 tout moment.
+          Conforme au RGPD. Désinscription à tout moment.
         </p>
       </motion.div>
     </div>

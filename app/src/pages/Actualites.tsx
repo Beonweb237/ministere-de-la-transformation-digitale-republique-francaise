@@ -22,42 +22,42 @@ gsap.registerPlugin(ScrollTrigger);
    ────────────────────────────────────────────── */
 
 const stats = [
-  { number: 248, label: 'COMMUNIQU\u00c9S' },
+  { number: 248, label: 'COMMUNIQUÉS' },
   { number: 56, label: 'CONSULTATIONS' },
-  { number: 12, label: '\u00c9V\u00c9NEMENTS' },
-  { number: 1.2, label: 'ABONN\u00c9S', suffix: 'M' },
+  { number: 12, label: 'ÉVÉNEMENTS' },
+  { number: 1.2, label: 'ABONNÉS', suffix: 'M' },
 ];
 
-const filterTabs = ['TOUS', 'COMMUNIQU\u00c9S', 'CONSULTATIONS', '\u00c9V\u00c9NEMENTS', 'PRESSE', 'DOSSIER'];
+const filterTabs = ['TOUS', 'COMMUNIQUÉS', 'CONSULTATIONS', 'ÉVÉNEMENTS', 'PRESSE', 'DOSSIER'];
 
 const newsArticles = [
-  { id: 1, image: '/news-1.jpg', category: 'CONSULTATION', date: '10 JANVIER 2026', title: "Consultation publique sur la Charte de l'Identit\u00e9 Num\u00e9rique : donnez votre avis" },
-  { id: 2, image: '/news-2.jpg', category: '\u00c9V\u00c9NEMENT', date: '8 JANVIER 2026', title: 'Salon des Maires 2026 : le minist\u00e8re pr\u00e9sente ses nouveaux outils num\u00e9riques' },
-  { id: 3, image: '/news-3.jpg', category: 'COMMUNIQU\u00c9', date: '5 JANVIER 2026', title: 'D\u00e9ploiement du cloud souverain INTERCONNECT dans 15 nouvelles administrations' },
-  { id: 4, image: '/news-featured.jpg', category: 'PRESSE', date: '3 JANVIER 2026', title: 'Entretien : la feuille de route num\u00e9rique 2026\u20132030 du gouvernement' },
-  { id: 5, image: '/news-1.jpg', category: 'COMMUNIQU\u00c9', date: '20 D\u00c9CEMBRE 2025', title: 'Extension de France Services : 500 nouveaux guichets d\u2019ici juin 2026' },
-  { id: 6, image: '/news-2.jpg', category: 'CONSULTATION', date: '18 D\u00c9CEMBRE 2025', title: 'Projet de loi sur la cybers\u00e9curit\u00e9 : participez \u00e0 la consultation en ligne' },
-  { id: 7, image: '/news-3.jpg', category: 'DOSSIER', date: '15 D\u00c9CEMBRE 2025', title: 'Dossier sp\u00e9cial : l\u2019administration num\u00e9rique en France, bilan et perspectives' },
-  { id: 8, image: '/news-1.jpg', category: '\u00c9V\u00c9NEMENT', date: '12 D\u00c9CEMBRE 2025', title: 'Webinaire : Comment cr\u00e9er votre association en ligne en 15 minutes' },
-  { id: 9, image: '/news-2.jpg', category: 'COMMUNIQU\u00c9', date: '8 D\u00c9CEMBRE 2025', title: 'Signature d\u2019un partenariat avec La Poste pour d\u00e9ployer l\u2019identit\u00e9 num\u00e9rique' },
+  { id: 1, image: '/news-1.jpg', category: 'CONSULTATION', date: '10 JANVIER 2026', title: "Consultation publique sur la Charte de l'Identité Numérique : donnez votre avis" },
+  { id: 2, image: '/news-2.jpg', category: 'ÉVÉNEMENT', date: '8 JANVIER 2026', title: 'Salon des Maires 2026 : le ministère présente ses nouveaux outils numériques' },
+  { id: 3, image: '/news-3.jpg', category: 'COMMUNIQUÉ', date: '5 JANVIER 2026', title: 'Déploiement du cloud souverain INTERCONNECT dans 15 nouvelles administrations' },
+  { id: 4, image: '/news-featured.jpg', category: 'PRESSE', date: '3 JANVIER 2026', title: 'Entretien : la feuille de route numérique 2026–2030 du gouvernement' },
+  { id: 5, image: '/news-1.jpg', category: 'COMMUNIQUÉ', date: '20 DÉCEMBRE 2025', title: 'Extension de France Services : 500 nouveaux guichets d’ici juin 2026' },
+  { id: 6, image: '/news-2.jpg', category: 'CONSULTATION', date: '18 DÉCEMBRE 2025', title: 'Projet de loi sur la cybersécurité : participez à la consultation en ligne' },
+  { id: 7, image: '/news-3.jpg', category: 'DOSSIER', date: '15 DÉCEMBRE 2025', title: 'Dossier spécial : l’administration numérique en France, bilan et perspectives' },
+  { id: 8, image: '/news-1.jpg', category: 'ÉVÉNEMENT', date: '12 DÉCEMBRE 2025', title: 'Webinaire : Comment créer votre association en ligne en 15 minutes' },
+  { id: 9, image: '/news-2.jpg', category: 'COMMUNIQUÉ', date: '8 DÉCEMBRE 2025', title: 'Signature d’un partenariat avec La Poste pour déployer l’identité numérique' },
 ];
 
 const events = [
-  { day: '28', month: 'JANV', title: 'Conf\u00e9rence de presse : Bilan 2025 et perspectives 2026', time: '14h00', location: 'H\u00f4tel de Matignon, Paris', description: 'Pr\u00e9sentation des grands chantiers du minist\u00e8re pour l\u2019ann\u00e9e 2026 par la ministre.' },
-  { day: '15', month: 'F\u00c9V', title: 'Salon de l\u2019Association : Forum national de la vie associative', time: '9h00', location: 'Paris Expo Porte de Versailles', description: 'Rencontres, ateliers et conf\u00e9rences d\u00e9di\u00e9es au monde associatif. 5000 visiteurs attendus.' },
-  { day: '5', month: 'MARS', title: 'Webinaire : Cybers\u00e9curit\u00e9 pour les collectivit\u00e9s territoriales', time: '10h00', location: 'En ligne', description: 'Comment s\u00e9curiser vos syst\u00e8mes d\u2019information ? Inscrivez-vous gratuitement.' },
+  { day: '28', month: 'JANV', title: 'Conférence de presse : Bilan 2025 et perspectives 2026', time: '14h00', location: 'Hôtel de Matignon, Paris', description: 'Présentation des grands chantiers du ministère pour l’année 2026 par la ministre.' },
+  { day: '15', month: 'FÉV', title: 'Salon de l’Association : Forum national de la vie associative', time: '9h00', location: 'Paris Expo Porte de Versailles', description: 'Rencontres, ateliers et conférences dédiées au monde associatif. 5000 visiteurs attendus.' },
+  { day: '5', month: 'MARS', title: 'Webinaire : Cybersécurité pour les collectivités territoriales', time: '10h00', location: 'En ligne', description: 'Comment sécuriser vos systèmes d’information ? Inscrivez-vous gratuitement.' },
 ];
 
 const consultations = [
-  { status: 'OUVERTE', statusColor: '#4A7C6F', title: 'Charte de l\u2019Identit\u00e9 Num\u00e9rique', description: 'Participez \u00e0 l\u2019\u00e9laboration de la charte qui encadrera l\u2019usage de l\u2019identit\u00e9 num\u00e9rique en France.', deadline: 'Jusqu\u2019au 28 f\u00e9vrier 2026', progress: 65 },
-  { status: 'OUVERTE', statusColor: '#4A7C6F', title: 'Projet de loi sur la cybers\u00e9curit\u00e9', description: 'Consultez et contribuez au projet de loi visant \u00e0 renforcer la cybers\u00e9curit\u00e9 des services publics.', deadline: 'Jusqu\u2019au 15 mars 2026', progress: 40 },
-  { status: 'BIENT\u00d4T', statusColor: '#E5B045', title: 'Budget Participatif Num\u00e9rique 2026', description: 'Proposez et votez pour les projets num\u00e9riques que vous souhaitez voir financ\u00e9s dans votre r\u00e9gion.', deadline: 'Ouverture le 1er mars 2026', progress: 0 },
+  { status: 'OUVERTE', statusColor: '#4A7C6F', title: 'Charte de l’Identité Numérique', description: 'Participez à l’élaboration de la charte qui encadrera l’usage de l’identité numérique en France.', deadline: 'Jusqu’au 28 février 2026', progress: 65 },
+  { status: 'OUVERTE', statusColor: '#4A7C6F', title: 'Projet de loi sur la cybersécurité', description: 'Consultez et contribuez au projet de loi visant à renforcer la cybersécurité des services publics.', deadline: 'Jusqu’au 15 mars 2026', progress: 40 },
+  { status: 'BIENTÔT', statusColor: '#E5B045', title: 'Budget Participatif Numérique 2026', description: 'Proposez et votez pour les projets numériques que vous souhaitez voir financés dans votre région.', deadline: 'Ouverture le 1er mars 2026', progress: 0 },
 ];
 
 const pressResources = [
-  { icon: FileText, title: 'Dossiers de presse', description: 'Communiqu\u00e9s, discours, notes de cadrage', cta: 'T\u00c9L\u00c9CHARGER' },
-  { icon: Image, title: 'Phototh\u00e8que institutionnelle', description: 'Photos HD du ministre et des \u00e9v\u00e9nements', cta: 'CONSULTER' },
-  { icon: Video, title: 'Vid\u00e9os et interviews', description: 'Retransmissions et extraits vid\u00e9o', cta: 'REGARDER' },
+  { icon: FileText, title: 'Dossiers de presse', description: 'Communiqués, discours, notes de cadrage', cta: 'TÉLÉCHARGER' },
+  { icon: Image, title: 'Photothèque institutionnelle', description: 'Photos HD du ministre et des événements', cta: 'CONSULTER' },
+  { icon: Video, title: 'Vidéos et interviews', description: 'Retransmissions et extraits vidéo', cta: 'REGARDER' },
 ];
 
 /* ──────────────────────────────────────────────
